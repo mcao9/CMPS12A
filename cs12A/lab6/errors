@@ -1,0 +1,30 @@
+// errors
+// Michael Cao
+// mcao9@ucsc.edu
+// lab6
+// errors found in the class file LetterHome through black-box testing
+
+There are a total of 5 errors.
+
+First Error:
+There is a typo when the sentence code 4, is inputted. The output is books
+which is plural but should be singular.
+Second Error:
+The modifier code 4 with the corresponding sentence code 2, has the wrong output.
+The specifications state that the output should be "cold", but the output is
+"hot".
+Third Error:
+The modifier code 3 with the corresponding sentence code 3, has the wrong output.
+The specifications state that the output should be "next weekend", but the 
+output is "last weekend".
+Fourth Error:
+When the sentence code 5 is inputted with a modifier code that is out of bounds,
+the program does print error in place for the word as expected. However,
+when the word "ERROR" is printed, the rest of the sentence "you sent" is
+not printed which should not be the case. The expected output of a out
+of bounds input should be "Thanks for the ERROR you sent."
+Fifth Error:
+When a sentence code that is out of bounds is inputted, the expected output
+is "# is not a valid sentence code". However, the output of this program is
+missing the "not" and instead prints out "# is a valid sentence code".
+

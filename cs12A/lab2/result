@@ -1,0 +1,21 @@
+/afs/cats.ucsc.edu/users/w/mcao9/cs12a/lab2
+
+Access list for public is
+Normal rights:
+  system:operator rlidwk
+  system:authuser rlid
+  system:anyuser rl
+  mcao9 rlidwka
+
+Access list for private is
+Normal rights:
+  mcao9 rlidwka
+
+total 7
+-rw-r--r--. 1 mcao9 users  426 Jan 19 14:11 HelloWorld.class
+drwxr-xr-x. 2 mcao9 users 2048 Jan 19 13:26 private
+-rwx------. 1 mcao9 users  193 Jan 19 14:14 prog
+drwxr-xr-x. 2 mcao9 users 2048 Jan 19 13:26 public
+-rw-r--r--. 1 mcao9 users  230 Jan 24 01:12 result
+
+Hello, lab2!

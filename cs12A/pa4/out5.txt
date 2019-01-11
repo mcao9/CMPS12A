@@ -1,0 +1,10 @@
+Enter the degree: 
+Enter 7 coefficients: 
+Enter endpoints, or q to quit: 
+   Odd root in [2.0, 4.0] found at: 2.2360679775
+Enter endpoints, or q to quit: 
+   Odd root in [-4.0, -2.0] found at: -2.2360679775
+Enter endpoints, or q to quit: 
+   No root found in [-2.0, 2.0]
+Enter endpoints, or q to quit: 
+bye!

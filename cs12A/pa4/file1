@@ -1,0 +1,10 @@
+Enter the degree: 
+Enter 9 coefficients: 
+Enter endpoints, or q to quit: 
+   Odd root in [-2.0, 0.0] found at: -1.7320508076
+Enter endpoints, or q to quit: 
+   Even root in [1.0, 1.5] found at: 1.2599210499
+Enter endpoints, or q to quit: 
+   Odd root in [1.5, 2.0] found at: 1.7320508076
+Enter endpoints, or q to quit: 
+bye!

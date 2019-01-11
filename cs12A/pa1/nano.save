@@ -1,0 +1,23 @@
+// Lawn.java
+// Michael Cao
+// mcao9@ucsc.edu
+// pa1
+// calculates the lawn area and mowing time of a lot
+
+import java.util.Scanner;
+
+double lotLength, lotWidth, lotArea, houseWidth, houseLength, houseArea, lawnArea;
+Scanner sc = new Scanner(System.in);
+
+System.out.println("Enter the length and width of the lot, in feet: ");
+lotWidth = sc.nextDouble();
+lotLength = sc.nextDouble();
+lotArea = lotWidth*lotLength;
+
+System.out.println("Enter the length and width of the house, in feet: ");
+houseWidth = sc.nextDouble();
+houseLength = sc.nextDouble();
+houseArea = houseWidth*houseLength;
+
+lawnArea = lotArea - houseArea;
+System.out.print("The lawn area is " + lawnArea + " square feet.");

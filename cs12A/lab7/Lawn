@@ -1,0 +1,30 @@
+#! /bin/bash
+#  Lawn
+#  Michael Cao
+#  mcao9@ucsc.edu
+#  lab7
+#  A bash script that emulates program assignment 1
+
+echo "Enter the length and width of the lot, in feet:"
+read lotLength lotWidth
+lotArea=$( echo "scale=5;$lotLength*$lotWidth" | bc )
+
+echo "Enter the length and width of the house, in feet:"
+read houseLength houseWidth
+houseArea=$( echo "scale=5;$houseLength*$houseWidth" | bc )
+
+lawnArea=$( echo "scale=5;$lotArea-$houseArea" | bc )
+echo "The lawn area is $lawnArea square feet."
+
+echo "Enter the mowing rate, in square feet per second:"
+read mowingSpeed
+mowingtime=$( echo "scale=5;$lawnArea/$mowingSpeed" | bc )
+
+s=$( echo "if($mowingtime%1>.5){$mowingtime/1+1}else{$mowingtime/1}" | bc )
+m=$( echo "$s/60" | bc )
+s=$( echo "$s%60" | bc )
+h=$( echo "$m/60" | bc )
+m=$( echo "$m%60" | bc )
+echo "The mowing time is $h hours, $m minutes and $s seconds."
+
+

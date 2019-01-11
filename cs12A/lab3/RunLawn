@@ -1,0 +1,14 @@
+#! /bin/bash
+#
+#  RunLawn
+#  Michael Cao
+#  mcao9@ucsc.edu
+#  lab3
+#  a bash script that uses Lawn.java, taking input and sending output
+
+echo "compiling Lawn.java"
+javac Lawn.java >& Lawn-errs
+echo "running Lawn.class"
+java Lawn < Lawn-in > Lawn-out
+echo "deleting Lawn.class"
+rm Lawn.class

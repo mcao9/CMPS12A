@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class Roots{
+
+   public static void main( String[] args ){
+   Scanner sc = new Scanner(System.in);
+   int numCoefficient, degree;
+   System.out.println("Enter the degree: ");
+   degree = sc.nextInt();
+   System.out.println("Enter " + (degree+1) + " coefficients: ");
+   double[] C = new double[degree+1];
+   for(int i = 0; i < degree+1; i++){   
+      C[i] = sc.nextInt();
+   }
+
+   int x = 10;
+   double a = poly(C, x);
+   System.out.println(a);   
+   }
+
+   static double poly(double[] C, double x){
+      double sum = 0;
+      for(int i = 0; i < C.length; i++){
+         sum  = sum + (C[i]*Math.pow(x,C.length-1-i));
+      }
+      return sum;
+   }
+}
